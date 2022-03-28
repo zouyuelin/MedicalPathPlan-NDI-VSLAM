@@ -314,12 +314,12 @@ void MouseInteractorStyleCenterline::SetThePoints()
     for (auto actor:pointActors)
     {
        this->GetCurrentRenderer()->RemoveActor(actor);
-       actor->Delete();
+//        actor->Delete();
     }
-    for(auto pointPtr:mPoints)
-    {
-        pointPtr->Delete();
-    }
+//     for(auto pointPtr:mPoints)
+//     {
+//         pointPtr->Delete();
+//     }
 
     pointActors.clear();
     mPoints.clear();
